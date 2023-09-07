@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Jost&family=Orbitron&family=Phudu:wght@300&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis&family=Jost&family=Orbitron&family=Phudu:wght@300&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis&family=Josefin+Sans&family=Jost&family=Orbitron&family=Phudu:wght@300&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis&family=Josefin+Sans&family=Jost&family=Kanit&family=Orbitron&family=Phudu:wght@300&family=Playfair+Display&display=swap');
+
+body {
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    background-color: #885f66;
+    height: 50px;
+    justify-content: space-between;
+
+}
+
+.mainHeading {
+    float: left;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+#navBtn {
+    color: white;
+    width: 76px;
+    height: 32px;
+    background: rgb(163, 163, 232);
+    border-radius: 8px;
+    text-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+}
+
+.leftNav {
+    padding-left: 20px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 22%;
+    padding: 6px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.rightNav {
+    display: flex;
+    gap: 10px;
+    padding-right: 32px;
+    justify-content: center;
+    align-items: center
+}
+
+.rightNav img {
+    width: 32px;
+    height: 32px;
+    filter: invert();
+    transition: all ease-in-out 0.2s;
+}
+
+.rightNav img:hover {
+    filter: brightness(1);
+    transform: scale(1.2);
+
+}
+
+.primaryContainer {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: antiquewhite;
+}
+
+.filterContainer {
+
+    width: 16%;
+    height: 500px;
+    border: 5px double rgb(191, 156, 156);
+    border-radius: 10px;
+    box-shadow: 11px 8px 14px rgb(118, 71, 71);
+    position: absolute;
+    top: 107px;
+    left: 131px;
+}
+
+.filterHeading {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.filterBox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 9px;
+    padding-top: 10px;
+    gap: 6px;
+}
+
+
+.filterTable {
+    display: flex;
+    gap: 6px;
+
+}
+
+.dishContainer {
+    width: 61%;
+    height: 600px;
+    position: absolute;
+    top: 107px;
+    left: 464px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.dishBox {
+    display: flex;
+    border: 2px solid rgb(191, 156, 156);
+    border-radius: 10px;
+    box-shadow: 12px 10px 14px rgb(118, 71, 71);
+    height: 277px;
+    width: 100%;
+}
+
+
+.imgDiv {
+    width: 39%;
+}
+
+
+.imgDiv img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    height: 84%;
+
+}
+
+.infoDiv {
+    position: relative;
+    left: 33px;
+}
+
+.dishHeading {
+    position: relative;
+    top: -10px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.spanDiv {
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    top: 8px
+}
+
+.buttonFlex {
+    display: flex;
+    gap: 22px;
+}
+
+
+.btn {
+
+    color: white;
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+}
+
+.blue {
+
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+    width: 88px;
+}
+
+#red {
+    background-color: red;
+    width: 74px;
+}
+
+.green {
+    background-color: green;
+    width: 119px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+#yellow {
+    background-color: yellow;
+    width: 41%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+#footerHeading {
+    text-align: center;
+    font-size: 20px;
+    padding: 0.5% 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+.footerContent {
+    display: inline-block;
+    border-right: 2px solid white;
+    width: 32.9%;
+    height: 40px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    padding-top: 1%;
+
+}
+
+.noBorder {
+    border: none;
+}
+
+.footImg {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center
+}
+
+.footImg img {
+    width: 32px;
+    height: 32px;
+    filter: invert();
+}
+
+.footImg img:hover {
+    transform: scale(1.2);
+
+}
+
+.flexHeading {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1255px) {
+    .dishContainer {
+        width: 57%;
+    }
+}
+
+@media screen and (max-width:1187px) {
+    .dishContainer {
+        width: 55%;
+        left: 400px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:1151px) {
+    .spanDiv {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btnDiv {
+        top: 21px;
+    }
+}
+
+@media screen and (max-width:1106px) {
+    .dishHeading {
+        font-size: 20px;
+    }
+
+    .btnDiv {
+        top: 30px;
+    }
+}
+
+@media screen and (max-width:1043px) {
+    .spanDiv {
+        font-size: 13px;
+    }
+
+    .dishContainer {
+        left: 365px;
+    }
+}
+
+@media screen and (max-width:952px) {
+    .filterContainer {
+        left: 79px;
+    }
+
+    .dishContainer {
+        left: 300px;
+    }
+
+    .btn {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .btnDiv {
+        top: 56px;
+        gap: 14px;
+    }
+
+    .infoDiv {
+        left: 24px;
+    }
+
+    .buttonFlex {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width:912px) {
+    .imgDiv {
+        width: 32%;
+    }
+
+    .dishContainer {
+        left: 270px;
+    }
+
+    .imgDiv img {
+        height: 100%;
+    }
+
+    .btn {
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    .btnDiv {
+        top: 80px;
+        gap: 14px;
+    }
+
+}
+
+@media screen and (max-width:860px) {
+    .footer {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:836px) {
+    .filterContainer {
+        left: 35px;
+        width: 21%;
+    }
+
+    .dishContainer {
+        left: 257px;
+    }
+
+    .spanDiv {
+        width: 66%;
+    }
+
+    #blockHeading {
+        width: 66%;
+    }
+
+    .secondBtnBox {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .btn {
+        width: 25%;
+    }
+
+    #yellow {
+        width: 25%;
+    }
+
+    .together {
+        position: relative;
+        bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width:701px) {
+
+    .footer {
+        font-size: 8px;
+    }
+
+    .secondBtnBox {
+        width: 35%;
+    }
+
+    .together {
+        position: relative;
+        bottom: 20px;
+    }
+
+    #yellow {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width:677px) {
+    .firstBtnBox {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width:668px) {
+    .mainHeading {
+        font-size: 17px;
+    }
+
+    #navBtn {
+        width: 48px;
+        font-size: 13px;
+        height: 27px;
+    }
+
+
+    .rightNav img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .rightNav {
+        margin-right: 30px;
+    }
+
+    .filterHeading {
+        font-size: 19px;
+    }
+
+    .filterTable {
+        font-size: 14px;
+    }
+
+    .dishContainer {
+        left: 215px;
+    }
+}
+
+@media screen and (max-width:578px) {
+    .dishHeading {
+        font-size: 17px;
+    }
+
+    .firstBtnBox {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width:551px) {
+    #footerHeading {
+        font-size: 15px;
+    }
+
+    .footerContent {
+        width: 32%;
+    }
+
+    .footImg img {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+
+
+@media screen and (max-width:537px) {
+    .spanDiv {
+        font-size: 11px;
+    }
+
+    .firstBtnBox {
+        width: 36%;
+    }
+
+    #yellow {
+        width: 36%;
+    }
+
+    .btn {
+        padding: 0px;
+    }
+
+    .filterBox {
+        padding-left: 0px;
+    }
+
+    .dishContainer {
+        left: 185px;
+    }
+
+    .filterTable {
+        gap: 0px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .filterContainer {
+        width: 45%;
+        left: 100px;
+    }
+
+    .dishContainer {
+        left: 55px;
+        top: 659px;
+        width: 66%;
+    }
+
+    .primaryContainer {
+        height: 1250px;
+    }
+
+    .filterTable {
+        gap: 5px;
+        font-size: 16px;
+    }
+
+    .filterBox {
+        padding-left: 5px;
+    }
+
+    .mainHeading {
+        font-size: 13px;
+    }
+
+    #navBtn {
+        width: 37px;
+        font-size: 8px;
+        height: 23px;
+    }
+
+
+    .rightNav img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .rightNav {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:335px) {
+    .rightNav {
+        display: none;
+    }
+
+    .leftNav {
+        padding-left: 29%;
+    }
+
+
+    .filterTable {
+        gap: 0px;
+        font-size: 12px;
+    }
+
+    .filterBox {
+        padding-left: 1px;
+    }
+
+    .filterHeading {
+        font-size: 15px;
+    }
+
+    .filterContainer {
+        left: 90px;
+    }
+    .buttonFlex{
+        gap: 3px;
+    }
+    .btn{
+        display: block;
+    }
+    .newBlue{
+        width: 40%;
+        position: relative;
+        bottom: 70px;
+        left: 21px;
+    }
+    .newRed{
+        position: relative;
+    right: 50px;
+    bottom: 47px;
+
+    }
+    .newGreen{
+        position: relative;
+    width: 37%;
+    bottom: 57px;
+    left: 25px;
+
+    }
+    .newYellow{
+        position: relative;
+        bottom: 34px;
+        right: 37px;
+
+    }
+    .btnDiv{
+        top: 106px;
+        right: 23px;
+    
+    }
+    #redId{
+        right: 41px;
+        width: 30%;
+    }
+
+
+}
