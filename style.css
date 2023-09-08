@@ -215,7 +215,7 @@ body {
 }
 
 .footer {
-    background-color:  #844953;
+    background-color: #844953;
     color: white;
 }
 
@@ -343,12 +343,17 @@ body {
     }
 }
 
-@media screen and (max-width:912px) {
+@media screen and (max-width:912px) and (min-width:860px) {
     .imgDiv {
         width: 32%;
     }
 
+    .filterContainer {
+        top: 250px;
+    }
+
     .dishContainer {
+        top: 250px;
         left: 270px;
     }
 
@@ -366,6 +371,9 @@ body {
         gap: 14px;
     }
 
+    .primaryContainer {
+        height: 1596px;
+    }
 }
 
 @media screen and (max-width:860px) {
@@ -413,6 +421,22 @@ body {
 
 }
 
+@media screen and (max-width:820px) and (min-width:701px) {
+    .primaryContainer {
+        height: 994px;
+    }
+
+    .filterContainer {
+        top: 200px;
+
+    }
+
+    .dishContainer {
+        top: 200px;
+    }
+
+}
+
 @media screen and (max-width:701px) {
 
     .footer {
@@ -437,6 +461,19 @@ body {
     .firstBtnBox {
         width: 28%;
     }
+
+    .imgDiv img {
+        height: 32%;
+        top: 72px;
+        width: 79%;
+    }
+    .infoDiv{
+        left: 10px;
+    }
+    .dishHeading{
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width:668px) {
@@ -473,9 +510,16 @@ body {
     }
 }
 
+@media screen and (max-width:655px) {
+    .btn {
+        font-size: 10px;
+    }
+
+}
+
 @media screen and (max-width:578px) {
-    .dishHeading {
-        font-size: 17px;
+    .dishHeading{
+        font-size: 14px;
     }
 
     .firstBtnBox {
@@ -604,46 +648,83 @@ body {
     .filterContainer {
         left: 90px;
     }
-    .buttonFlex{
+
+    .buttonFlex {
         gap: 3px;
     }
-    .btn{
+
+    .btn {
         display: block;
     }
-    .newBlue{
+
+    .newBlue {
         width: 40%;
         position: relative;
         bottom: 70px;
         left: 21px;
     }
-    .newRed{
+
+    .newRed {
         position: relative;
-    right: 50px;
-    bottom: 47px;
+        right: 50px;
+        bottom: 47px;
 
     }
-    .newGreen{
+
+    .newGreen {
         position: relative;
-    width: 37%;
-    bottom: 57px;
-    left: 25px;
+        width: 37%;
+        bottom: 57px;
+        left: 25px;
 
     }
-    .newYellow{
+
+    .newYellow {
         position: relative;
         bottom: 34px;
         right: 37px;
 
     }
-    .btnDiv{
+
+    .btnDiv {
         top: 106px;
         right: 23px;
-    
+
     }
-    #redId{
+
+    #redId {
         right: 41px;
         width: 30%;
     }
+}
 
+@media screen and (max-width:331px) {
+    .dishHeading {
+        font-size: 12px;
+        top: 0px;
+    }
+
+    .newYellow {
+        display: none;
+    }
+
+    .newGreen {
+        display: none;
+    }
+
+    #red {
+        right: 45px;
+    }
+
+    .btnDiv {
+        top: 162px;
+        right: 8px;
+    }
+
+    #redId {
+
+        right: 47px;
+        width: 51%;
+    }
 
 }
